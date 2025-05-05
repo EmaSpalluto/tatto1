@@ -1,0 +1,153 @@
+* {
+    font-family: "Montserrat", sans-serif;
+
+}
+
+
+
+h1 {
+    font-family: "League Script", ;
+    width: 100%;
+}
+
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+    font-family: "Electrolize", sans-serif;
+}
+
+/* variabili */
+/* Le variabili in css sono esattamente come delle proprieta, quindi una coppia chiave-valore . la sintssi del nome delle variabili prevede obbligatoriamente due trattini*/
+:root {
+    --noir: rgb(0, 0, 0);
+    --gri: #859085;
+    --w: white;
+}
+
+
+h1 {
+
+    color: var(--w);
+}
+
+.h3 {
+    color: var(--noir);
+}
+
+body {
+    background-color: var(--noir);
+
+    position: relative;
+    background-color: black;
+
+}
+
+.bg-noir {
+    background-color: var(--noir);
+}
+
+.bg-w {
+    background-color: var(--w);
+}
+
+.bg-gri {
+    background-color: var(--gri);
+}
+
+.text-noir {
+    color: var(--noir);
+}
+
+.text-gri {
+    color: var(--gri);
+}
+
+.text-w {
+    color: var(--w);
+}
+
+.text-rosso {
+    color: red;
+}
+
+.border-w {
+    border: 2px solid var(--w);
+}
+
+.border-noir {
+    border: 2px solid var(--noir);
+}
+
+.border-gri {
+    border: 2px solid var(--gri);
+}
+
+/* Header */
+
+.header-custom {
+    height: 120vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./media/macchina.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: sticky;
+
+}
+
+/* Navbar */
+
+
+nav {
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link {
+    font-weight: bold;
+
+}
+
+a.nav-link {
+    color: white;
+}
+
+a.nav-link:hover {
+    color: var(--gri);
+}
+/* carusel */
+
+/* Section */
+.img-custom {
+    width: 300px;
+    float: left;
+    padding: 15px 15px 15px 0;
+    margin-left: 50px;
+
+}
+
+p {
+    color: #859085
+}
+
+.img-bet {
+    width: 400px;
+    margin: 30px;
+}
+.img-bet1 {
+    width: 200px;
+    margin: 30px;
+}
+
+.img-c{
+    width: 200px;
+}
+@media screen and (max-width: 600px) {
+    .img-bet{
+        width: 60%;
+    }
+}
